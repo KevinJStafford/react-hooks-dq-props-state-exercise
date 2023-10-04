@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Boss from "../assets/boss-hog.png";
 import BabyHog from "./BabyHog";
-// import offspring from "../data.js"
+import offspring from "../data.js"
 
 function HogBoss() {
   const [eyeColor, setEyeColor] = useState("blue");
@@ -40,9 +40,9 @@ function HogBoss() {
         <img id="boss-blaster" src={Boss} alt="" />
       </div>
       <ul className="hoglist">
-        <BabyHog />
-        <BabyHog />
-        <BabyHog />
+        <BabyHog eyeColor={eyeColor} id={1}/>
+        <BabyHog eyeColor={eyeColor} id={2}/>
+        <BabyHog eyeColor={eyeColor} id={3}/>
       </ul>
     </div>
   );
